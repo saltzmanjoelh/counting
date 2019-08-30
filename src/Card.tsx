@@ -40,7 +40,7 @@ function Card(props: { value: number }) {
       <Button onClick={handleClick}>
       <Box className={classes.empty}></Box>
       <Box color={textColors[props.value % 10]}>
-        <Typography variant='h2'><strong>{props.value}</strong></Typography>
+        <Typography variant='h2'>{props.value}</Typography>
       </Box> 
     </Button>
 
