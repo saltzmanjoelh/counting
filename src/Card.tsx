@@ -39,8 +39,8 @@ function Card(props: { value: number }) {
 
       <Button onClick={handleClick}>
       <Box className={classes.empty}></Box>
-      <Box color={textColors[props.value % 10]} margin={'50%'}>
-        <Typography>{props.value}</Typography>
+      <Box color={textColors[props.value % 10]}>
+        <Typography variant='h2'><strong>{props.value}</strong></Typography>
       </Box> 
     </Button>
 
