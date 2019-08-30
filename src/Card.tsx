@@ -36,19 +36,20 @@ function Card(props: { value: number }) {
   }
   return (
     <Paper className={classes.paper}>
-      
-    <Button onClick={handleClick}>
-      <Box color={textColors[props.value % 10]}>
+
+      <Button onClick={handleClick}>
+      <Box className={classes.empty}></Box>
+      <Box color={textColors[props.value % 10]} margin={'50%'}>
         <Typography>{props.value}</Typography>
       </Box> 
     </Button>
-      
+
       {/* <Box className={classes.empty}></Box>
       <Box color={textColors[props.value % 10]}>
         <Typography>{props.value}</Typography>
       </Box> */}
-      
-    {/* </Button> */}
+
+
     </Paper>
   );
 }
